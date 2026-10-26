@@ -173,3 +173,7 @@ Procedural Web Audio API sound generator (no external audio files needed):
 3. **Operating Days**: The stall is **Open All 7 Days** (no Monday holiday).
 4. **Prices**: Strictly keep prices removed everywhere. Do not re-add `₹` amounts to menu cards, CTAs, hero badges, or WhatsApp payloads.
 5. **Menu Items**: Strictly the 4 signature items: Pani Puri, Shevpuri, Delicious Dahi Puri, and Chatakedar Bhel Puri. Dabeli is completely removed.
+6. **Mobile Layout Rules**:
+   - The complimentary Sukha Puri button (`#sukhaPuriFloatingBtn`) displays as a compact 48–50px circular FAB (`🥟`) at bottom-left on mobile (`max-width: 768px`), perfectly mirroring the WhatsApp FAB (`💬`) on bottom-right, keeping the entire screen center unobstructed for content and CTAs.
+   - The active serving style panel uses `.style-panel-top-row` for the title and heat badge, and a 100% full-width `.style-desc` paragraph to guarantee smooth multi-line wrapping on mobile devices.
+   - On screens `<= 600px`, `.header-order-btn` in the site header is hidden to prevent horizontal overflow and guarantee `.mobile-nav-toggle` (hamburger menu) remains fully visible and easy to tap.

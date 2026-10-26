@@ -231,13 +231,11 @@ function initSteelTapDispenser() {
     if (!s) return;
 
     activeStylePanel.innerHTML = `
-      <div class="style-panel-header">
-        <div>
-          <div class="style-title" style="color: ${s.color};">${s.name}</div>
-          <div class="style-desc">${s.desc}</div>
-        </div>
+      <div class="style-panel-top-row">
+        <div class="style-title" style="color: ${s.color};">${s.name}</div>
         <span class="style-heat-badge">${s.badge}</span>
       </div>
+      <p class="style-desc">${s.desc}</p>
       <div class="style-notes-list">
         ${s.notes.map(n => `<span class="style-note-chip">✓ ${n}</span>`).join('')}
       </div>
