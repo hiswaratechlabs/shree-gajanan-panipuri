@@ -31,8 +31,10 @@ const BUSINESS_CONFIG = {
   contact: {
     whatsappNumber: "919284871128",
     displayPhone: "+91 9284871128",
-    instagramHandle: "@shree_gajanan_panipuri",
-    instagramUrl: "https://instagram.com",
+    instagramHandle: "@shree_gajananpanipuri",
+    instagramUrl: "https://www.instagram.com/shree_gajananpanipuri?mdxt=MXNyajB5c2h2bjJkMg==",
+    facebookName: "Shree Gajanan Panipuri",
+    facebookUrl: "https://www.facebook.com/share/19pmyLsNLo/",
     email: "shreegajanan.nashik@gmail.com"
   },
 
