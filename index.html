@@ -108,8 +108,8 @@
     rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=16">
-  <link rel="stylesheet" href="css/components.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=17">
+  <link rel="stylesheet" href="css/components.css?v=17">
 </head>
 
 <body>
@@ -210,8 +210,8 @@
 
   <!-- Mobile Navigation Drawer -->
   <aside class="mobile-drawer" id="mobileDrawer">
-    <div>
-      <div class="brand-logo" style="margin-bottom: 2rem;">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
         <div class="logo-symbol">
           <span>ग</span>
         </div>
@@ -219,68 +219,69 @@
           <div class="logo-title">
             <span>SHREE GAJANAN</span>
           </div>
-          <span class="logo-sub">Panipuri & Special Chaat Center</span>
+          <span class="logo-sub">Panipuri &amp; Special Chaat Center</span>
         </div>
       </div>
+      <button class="mobile-drawer-close-btn" id="mobileDrawerClose" aria-label="Close Navigation Menu">&times;</button>
+    </div>
 
-      <div class="mobile-drawer-links">
-        <a href="#hero" class="mobile-nav-link">
-          <span data-i18n="navHome">Home</span>
-        </a>
-        <a href="#panipuri" class="mobile-nav-link">
-          <span data-i18n="navPuriLab">Water Tank</span>
-        </a>
-        <a href="#chaats" class="mobile-nav-link">
-          <span data-i18n="navChaats">Signature Chaats</span>
-        </a>
-        <a href="#menu" class="mobile-nav-link">
-          <span data-i18n="navMenu">Menu</span>
-        </a>
-        <a href="#partyOrders" class="mobile-nav-link">
-          <span style="color: var(--gold-warm); font-weight: 700;">Party Orders 🎉</span>
-        </a>
-        <a href="#gaadi-story" class="mobile-nav-link">
-          <span data-i18n="navCart">Our Live Stall</span>
-        </a>
-        <a href="#social-hub" class="mobile-nav-link">
-          <span style="color: var(--orange-spicy); font-weight: 700;">Social Community 📸</span>
-        </a>
-        <a href="#location" class="mobile-nav-link">
-          <span data-i18n="navLocation">Location & Hours</span>
-        </a>
-      </div>
+    <div class="mobile-drawer-links">
+      <a href="#hero" class="mobile-nav-link">
+        <span data-i18n="navHome">Home</span>
+      </a>
+      <a href="#panipuri" class="mobile-nav-link">
+        <span data-i18n="navPuriLab">Water Tank</span>
+      </a>
+      <a href="#chaats" class="mobile-nav-link">
+        <span data-i18n="navChaats">Signature Chaats</span>
+      </a>
+      <a href="#menu" class="mobile-nav-link">
+        <span data-i18n="navMenu">Menu</span>
+      </a>
+      <a href="#partyOrders" class="mobile-nav-link">
+        <span style="color: var(--gold-warm); font-weight: 700;">Party Orders 🎉</span>
+      </a>
+      <a href="#gaadi-story" class="mobile-nav-link">
+        <span data-i18n="navCart">Our Live Stall</span>
+      </a>
+      <a href="#social-hub" class="mobile-nav-link">
+        <span style="color: var(--orange-spicy); font-weight: 700;">Social Community 📸</span>
+      </a>
+      <a href="#location" class="mobile-nav-link">
+        <span data-i18n="navLocation">Location &amp; Hours</span>
+      </a>
+    </div>
 
-      <!-- Mobile Drawer Social Connect -->
-      <div class="mobile-social-box">
-        <div class="mobile-social-title">FOLLOW OUR LIVE CRUNCH</div>
-        <div class="mobile-social-pills-row">
-          <a href="https://www.instagram.com/shree_gajananpanipuri?mdxt=MXNyajB5c2h2bjJkMg==" target="_blank"
-            rel="noopener" class="mobile-social-chip instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <span>@shree_gajananpanipuri</span>
-          </a>
-          <a href="https://www.facebook.com/share/19pmyLsNLo/" target="_blank" rel="noopener"
-            class="mobile-social-chip facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-            </svg>
-            <span>Facebook Page</span>
-          </a>
-        </div>
+    <!-- Mobile Drawer Social Connect -->
+    <div class="mobile-social-box">
+      <div class="mobile-social-title">FOLLOW OUR LIVE CRUNCH</div>
+      <div class="mobile-social-pills-row">
+        <a href="https://www.instagram.com/shree_gajananpanipuri?mdxt=MXNyajB5c2h2bjJkMg==" target="_blank"
+          rel="noopener" class="mobile-social-chip instagram" title="Follow @shree_gajananpanipuri on Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/share/19pmyLsNLo/" target="_blank" rel="noopener"
+          class="mobile-social-chip facebook" title="Visit Facebook Page">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+          <span>Facebook</span>
+        </a>
       </div>
     </div>
 
-    <div>
-      <button class="btn btn-whatsapp" style="width: 100%; margin-bottom: 1rem;"
+    <div class="mobile-drawer-bottom">
+      <button class="btn btn-whatsapp" style="width: 100%; padding: 0.85rem 1rem;"
         onclick="openOrderModal('panipuri-classic')">
         <span data-i18n="orderWhatsapp">Order on WhatsApp</span>
       </button>
-      <p style="font-size: 0.8rem; color: var(--cream-dark); text-align: center;">
+      <p style="font-size: 0.78rem; color: var(--cream-dark); text-align: center; margin-top: 0.5rem;">
         📍 Panchavati, Nashik • 4:30 PM — 10:30 PM
       </p>
     </div>
@@ -1727,9 +1728,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/config.js?v=15"></script>
-  <script src="js/sounds.js?v=15"></script>
-  <script src="js/app.js?v=15"></script>
+  <script src="js/config.js?v=17"></script>
+  <script src="js/sounds.js?v=17"></script>
+  <script src="js/app.js?v=17"></script>
 </body>
 
 </html>

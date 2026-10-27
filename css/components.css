@@ -281,15 +281,19 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 82%;
-  max-width: 380px;
+  width: 85%;
+  max-width: 360px;
   height: 100vh;
+  height: 100dvh;
   background: var(--bg-surface);
   border-left: 1px solid var(--border-medium);
-  padding: 6rem 2rem 3rem;
+  padding: 1.5rem 1.4rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   transition: right var(--transition-medium);
   z-index: 100;
   box-shadow: -15px 0 40px rgba(0, 0, 0, 0.75);
@@ -299,20 +303,59 @@
   right: 0;
 }
 
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-drawer-close-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--cream-pure);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mobile-drawer-close-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(90deg);
+}
+
 .mobile-drawer-links {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.45rem;
 }
 
 .mobile-nav-link {
   font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--cream-pure);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.4rem 0.65rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.is-active {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--lime-electric);
 }
 
 .mobile-drawer-backdrop {
@@ -4485,62 +4528,66 @@
 
 /* Mobile Drawer Social Box */
 .mobile-social-box {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(135deg, rgba(255, 96, 34, 0.08), rgba(225, 48, 108, 0.08), rgba(24, 119, 242, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-md);
-  padding: 1rem;
-  margin: 1.5rem 0 1rem;
+  padding: 0.85rem;
+  margin: 0.6rem 0;
 }
 
 .mobile-social-title {
   font-family: var(--font-display);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold-warm);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.55rem;
   text-align: center;
 }
 
 .mobile-social-pills-row {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
 
 .mobile-social-chip {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.6rem 0.9rem;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.84rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 800;
   text-decoration: none;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .mobile-social-chip.instagram {
-  background: linear-gradient(135deg, rgba(240, 148, 51, 0.15), rgba(188, 24, 136, 0.15));
-  border: 1px solid rgba(225, 48, 108, 0.35);
-  color: #f77737;
+  background: linear-gradient(135deg, #f09433, #dc2743, #bc1888);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(220, 39, 67, 0.35);
 }
 
 .mobile-social-chip.instagram:hover {
-  background: linear-gradient(135deg, #f09433, #dc2743, #bc1888);
-  color: #ffffff;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 .mobile-social-chip.facebook {
-  background: rgba(24, 119, 242, 0.12);
-  border: 1px solid rgba(24, 119, 242, 0.35);
-  color: #5890ff;
+  background: #1877f2;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.35);
 }
 
 .mobile-social-chip.facebook:hover {
-  background: #1877f2;
-  color: #ffffff;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 /* Dedicated Social Section */

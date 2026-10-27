@@ -168,6 +168,8 @@ function initMobileNav() {
     toggleDrawer(!isOpen);
   });
 
+  const closeBtn = document.getElementById('mobileDrawerClose');
+  closeBtn?.addEventListener('click', () => toggleDrawer(false));
   backdrop.addEventListener('click', () => toggleDrawer(false));
   navLinks.forEach(link => {
     link.addEventListener('click', () => toggleDrawer(false));
