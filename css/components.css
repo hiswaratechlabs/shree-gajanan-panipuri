@@ -5099,4 +5099,94 @@
   }
 }
 
+/* =========================================================================
+   15. MOBILE OVERLAP FIXES & SCREEN TUNING
+   ========================================================================= */
+
+@media (max-width: 768px) {
+  /* Fix 1: Hero Real Cart Pill positioned above master card to avoid covering badges */
+  .hero-stall-pill {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 0 auto 1.25rem auto !important;
+    width: fit-content !important;
+    z-index: 4 !important;
+  }
+
+  /* Fix 2: Prevent speech bubble and live badge colliding horizontally */
+  .hero-master-live-badge {
+    top: 0.85rem !important;
+    right: 0.85rem !important;
+    font-size: 0.7rem !important;
+    padding: 0.28rem 0.65rem !important;
+  }
+
+  .hero-master-speech-bubble {
+    top: 3.25rem !important;
+    left: 0.85rem !important;
+    font-size: 0.78rem !important;
+    padding: 0.35rem 0.75rem !important;
+    max-width: calc(100% - 1.7rem) !important;
+    white-space: nowrap !important;
+  }
+
+  /* Fix 3: Chaat Explorer stage badges colliding horizontally across image top */
+  .chaat-temp-pill {
+    top: 0.75rem !important;
+    left: 0.75rem !important;
+    font-size: 0.72rem !important;
+    padding: 0.28rem 0.65rem !important;
+    max-width: calc(100% - 1.5rem) !important;
+  }
+
+  .chaat-stage-badge-top {
+    top: auto !important;
+    bottom: 0.75rem !important;
+    right: 0.75rem !important;
+    font-size: 0.68rem !important;
+    padding: 0.28rem 0.65rem !important;
+  }
+
+  /* Fix 4: Extra padding on chaat-visual-footer and center button away from floating FABs */
+  .chaat-visual-footer {
+    padding: 1.25rem 1rem 1.8rem !important;
+  }
+
+  .btn-order-legend {
+    width: auto !important;
+    max-width: calc(100% - 110px) !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    font-size: 0.84rem !important;
+    padding: 0.75rem 1rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-master-speech-bubble {
+    font-size: 0.72rem !important;
+    padding: 0.3rem 0.65rem !important;
+    top: 3rem !important;
+    left: 0.65rem !important;
+  }
+
+  .hero-master-live-badge {
+    top: 0.65rem !important;
+    right: 0.65rem !important;
+    font-size: 0.64rem !important;
+    padding: 0.22rem 0.55rem !important;
+  }
+
+  .btn-order-legend {
+    max-width: calc(100% - 90px) !important;
+    font-size: 0.8rem !important;
+    padding: 0.7rem 0.85rem !important;
+  }
+}
+
+
 
